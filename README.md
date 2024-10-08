@@ -40,6 +40,3 @@ This Tampermonkey script automates job search on [Upwork](https://www.upwork.com
 ## Limitations
 - The script only works in the browser and requires the Upwork page to be open.
 - To run continuously, the browser and computer must be kept on.
-  
-## Support
-If you have any questions or issues with the script, please open an issue in this repository or contact us.
