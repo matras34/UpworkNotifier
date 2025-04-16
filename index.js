@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.9
 // @description  Keyword search on Upwork with title, description, and tags check, sends notifications to Telegram, and saves data between page reloads using localStorage.
-// @author       ChatGPT
+// @author       author
 // @match        *://www.upwork.com/*
 // @grant        none
 // ==/UserScript==
