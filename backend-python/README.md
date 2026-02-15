@@ -1,5 +1,50 @@
 # Web SSH - Python Backend (Простая установка для начинающих / Easy Setup for Beginners)
 
+## 🎯 ЧТО ДЕЛАТЬ ПОСЛЕ SETUP?
+
+**Вы здесь потому что запустили `setup.bat` или `setup.sh` и не знаете что делать дальше?**
+
+### 📖 Читайте подробную инструкцию:
+
+**🇷🇺 На русском (рекомендуется для начинающих):**
+- **[ЧТО_ДЕЛАТЬ_ДАЛЬШЕ.md](../ЧТО_ДЕЛАТЬ_ДАЛЬШЕ.md)** ← НАЧНИТЕ ОТСЮДА! Полная пошаговая инструкция
+- **[ШПАРГАЛКА.md](../ШПАРГАЛКА.md)** ← Быстрая справка на одной странице
+
+**🇬🇧 In English:**
+- **[README_WEBSSH.md](../README_WEBSSH.md)** ← Start here for English guide
+
+---
+
+## ⚡ Очень быстрый старт
+
+Если совсем некогда читать:
+
+```bash
+# 1. Установите PostgreSQL
+#    Windows: https://www.postgresql.org/download/windows/
+#    Mac: brew install postgresql@14
+#    Linux: sudo apt install postgresql
+
+# 2. Установите Redis (опционально)
+#    Windows: https://github.com/microsoftarchive/redis/releases
+#    Mac: brew install redis
+#    Linux: sudo apt install redis-server
+
+# 3. Проверьте файл .env (пароль от PostgreSQL!)
+
+# 4. Запустите сервер
+#    Windows: start.bat
+#    Mac/Linux: ./start.sh
+
+# 5. Откройте http://localhost:5000
+#    Логин: admin@example.com
+#    Пароль: admin123
+```
+
+**⚠️ Серьезно, прочитайте [ЧТО_ДЕЛАТЬ_ДАЛЬШЕ.md](../ЧТО_ДЕЛАТЬ_ДАЛЬШЕ.md) - там все понятно расписано!**
+
+---
+
 ## 🚀 Быстрый старт / Quick Start
 
 ### Windows

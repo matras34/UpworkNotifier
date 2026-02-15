@@ -58,15 +58,26 @@ echo ============================================
 echo Setup complete!
 echo ============================================
 echo.
-echo Next steps:
+echo ЧТО ДЕЛАТЬ ДАЛЬШЕ?
 echo.
-echo 1. Make sure PostgreSQL and Redis are running
-echo 2. Run the server: start.bat
+echo Подробная инструкция на русском:
+echo    ..\ЧТО_ДЕЛАТЬ_ДАЛЬШЕ.md
+echo    ..\ШПАРГАЛКА.md (быстрая справка)
 echo.
-echo 3. Access the application:
+echo English guide:
+echo    ..\README_WEBSSH.md
+echo.
+echo Быстрый старт:
+echo.
+echo 1. Установите PostgreSQL и Redis
+echo    (см. ЧТО_ДЕЛАТЬ_ДАЛЬШЕ.md)
+echo.
+echo 2. Запустите сервер: start.bat
+echo.
+echo 3. Откройте браузер:
 echo    http://localhost:5000
 echo.
-echo 4. Default login:
+echo 4. Войдите:
 echo    Email: admin@example.com
 echo    Password: admin123
 echo.
