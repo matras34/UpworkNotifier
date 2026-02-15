@@ -1,6 +1,7 @@
 # Backend
 backend/.env
 backend/main
+backend/server
 backend/*.exe
 backend/*.test
 backend/*.out
