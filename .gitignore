@@ -1,0 +1,52 @@
+# Backend
+backend/.env
+backend/main
+backend/server
+backend/*.exe
+backend/*.test
+backend/*.out
+
+# Python Backend
+backend-python/.env
+backend-python/venv/
+backend-python/__pycache__/
+backend-python/**/__pycache__/
+backend-python/**/*.pyc
+backend-python/**/*.pyo
+backend-python/**/*.pyd
+backend-python/.pytest_cache/
+backend-python/*.egg-info/
+backend-python/dist/
+backend-python/build/
+
+# Frontend
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+.docker/
+
+# Logs
+*.log
+
+# Temporary files
+/tmp/
