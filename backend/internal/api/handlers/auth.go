@@ -1,17 +1,18 @@
 package handlers
 
 import (
+	"context"
 	"database/sql"
 	"encoding/json"
 	"net/http"
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/matras34/UpworkNotifier/backend/internal/auth"
-	"github.com/matras34/UpworkNotifier/backend/internal/cache"
-	"github.com/matras34/UpworkNotifier/backend/internal/db"
-	"github.com/matras34/UpworkNotifier/backend/internal/db/models"
-	"github.com/matras34/UpworkNotifier/backend/pkg/logger"
+	"github.com/matras34/UpworkNotifier/internal/auth"
+	"github.com/matras34/UpworkNotifier/internal/cache"
+	"github.com/matras34/UpworkNotifier/internal/db"
+	"github.com/matras34/UpworkNotifier/internal/db/models"
+	"github.com/matras34/UpworkNotifier/pkg/logger"
 	"golang.org/x/crypto/bcrypt"
 )
 
@@ -112,11 +113,11 @@ func (h *AuthHandler) Login(w http.ResponseWriter, r *http.Request) {
 	})
 }
 
-func (h *AuthHandler) trackFailedLogin(ctx interface{}, email string) {
+func (h *AuthHandler) trackFailedLogin(ctx context.Context, email string) {
 	loginKey := "login_attempts:" + email
-	count, _ := h.cache.Increment(ctx.(interface{ context() interface{} }).context(), loginKey)
+	count, _ := h.cache.Increment(ctx, loginKey)
 	if count >= 5 {
-		h.cache.Expire(ctx.(interface{ context() interface{} }).context(), loginKey, 15*time.Minute)
+		h.cache.Expire(ctx, loginKey, 15*time.Minute)
 	}
 }
 

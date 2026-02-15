@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/matras34/UpworkNotifier/backend/pkg/logger"
+	"github.com/matras34/UpworkNotifier/pkg/logger"
 )
 
 type responseWriter struct {

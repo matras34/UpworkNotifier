@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/matras34/UpworkNotifier/backend/internal/auth"
+	"github.com/matras34/UpworkNotifier/internal/auth"
 )
 
 type contextKey string

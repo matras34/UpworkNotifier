@@ -9,7 +9,7 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/gorilla/websocket"
-	sshpkg "github.com/matras34/UpworkNotifier/backend/internal/ssh"
+	sshpkg "github.com/matras34/UpworkNotifier/internal/ssh"
 )
 
 const (

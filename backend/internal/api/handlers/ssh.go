@@ -9,14 +9,15 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/gorilla/websocket"
-	"github.com/matras34/UpworkNotifier/backend/internal/api/middleware"
-	"github.com/matras34/UpworkNotifier/backend/internal/cache"
-	"github.com/matras34/UpworkNotifier/backend/internal/crypto"
-	"github.com/matras34/UpworkNotifier/backend/internal/db"
-	"github.com/matras34/UpworkNotifier/backend/internal/db/models"
-	sshpkg "github.com/matras34/UpworkNotifier/backend/internal/ssh"
-	wspkg "github.com/matras34/UpworkNotifier/backend/internal/websocket"
-	"github.com/matras34/UpworkNotifier/backend/pkg/logger"
+	"github.com/matras34/UpworkNotifier/internal/api/middleware"
+	"github.com/matras34/UpworkNotifier/internal/auth"
+	"github.com/matras34/UpworkNotifier/internal/cache"
+	"github.com/matras34/UpworkNotifier/internal/crypto"
+	"github.com/matras34/UpworkNotifier/internal/db"
+	"github.com/matras34/UpworkNotifier/internal/db/models"
+	sshpkg "github.com/matras34/UpworkNotifier/internal/ssh"
+	wspkg "github.com/matras34/UpworkNotifier/internal/websocket"
+	"github.com/matras34/UpworkNotifier/pkg/logger"
 	"golang.org/x/crypto/ssh"
 )
 
@@ -82,7 +83,7 @@ func (h *SSHHandler) Connect(w http.ResponseWriter, r *http.Request) {
 	go h.handleSSHConnection(client, claims)
 }
 
-func (h *SSHHandler) handleSSHConnection(client *wspkg.Client, claims *middleware.UserContextKey) {
+func (h *SSHHandler) handleSSHConnection(client *wspkg.Client, claims *auth.Claims) {
 	// This is a simplified version - in production, you'd wait for the client to send connection details
 	// For now, we'll expect the connection details to be sent via the first WebSocket message
 	

@@ -10,17 +10,17 @@ import (
 	"time"
 
 	"github.com/joho/godotenv"
-	"github.com/matras34/UpworkNotifier/backend/internal/api"
-	"github.com/matras34/UpworkNotifier/backend/internal/api/handlers"
-	"github.com/matras34/UpworkNotifier/backend/internal/api/middleware"
-	"github.com/matras34/UpworkNotifier/backend/internal/auth"
-	"github.com/matras34/UpworkNotifier/backend/internal/cache"
-	"github.com/matras34/UpworkNotifier/backend/internal/config"
-	"github.com/matras34/UpworkNotifier/backend/internal/crypto"
-	"github.com/matras34/UpworkNotifier/backend/internal/db"
-	sshpkg "github.com/matras34/UpworkNotifier/backend/internal/ssh"
-	wspkg "github.com/matras34/UpworkNotifier/backend/internal/websocket"
-	"github.com/matras34/UpworkNotifier/backend/pkg/logger"
+	"github.com/matras34/UpworkNotifier/internal/api"
+	"github.com/matras34/UpworkNotifier/internal/api/handlers"
+	"github.com/matras34/UpworkNotifier/internal/api/middleware"
+	"github.com/matras34/UpworkNotifier/internal/auth"
+	"github.com/matras34/UpworkNotifier/internal/cache"
+	"github.com/matras34/UpworkNotifier/internal/config"
+	"github.com/matras34/UpworkNotifier/internal/crypto"
+	"github.com/matras34/UpworkNotifier/internal/db"
+	sshpkg "github.com/matras34/UpworkNotifier/internal/ssh"
+	wspkg "github.com/matras34/UpworkNotifier/internal/websocket"
+	"github.com/matras34/UpworkNotifier/pkg/logger"
 )
 
 func main() {

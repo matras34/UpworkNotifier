@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/matras34/UpworkNotifier/backend/internal/cache"
+	"github.com/matras34/UpworkNotifier/internal/cache"
 )
 
 type RateLimiter struct {

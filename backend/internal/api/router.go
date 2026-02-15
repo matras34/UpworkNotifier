@@ -4,9 +4,9 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/matras34/UpworkNotifier/backend/internal/api/handlers"
-	"github.com/matras34/UpworkNotifier/backend/internal/api/middleware"
-	"github.com/matras34/UpworkNotifier/backend/internal/auth"
+	"github.com/matras34/UpworkNotifier/internal/api/handlers"
+	"github.com/matras34/UpworkNotifier/internal/api/middleware"
+	"github.com/matras34/UpworkNotifier/internal/auth"
 	"github.com/rs/cors"
 )
 
