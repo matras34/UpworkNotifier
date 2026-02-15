@@ -6,6 +6,19 @@ backend/*.exe
 backend/*.test
 backend/*.out
 
+# Python Backend
+backend-python/.env
+backend-python/venv/
+backend-python/__pycache__/
+backend-python/**/__pycache__/
+backend-python/**/*.pyc
+backend-python/**/*.pyo
+backend-python/**/*.pyd
+backend-python/.pytest_cache/
+backend-python/*.egg-info/
+backend-python/dist/
+backend-python/build/
+
 # Frontend
 frontend/node_modules/
 frontend/build/
